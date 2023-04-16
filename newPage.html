@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="newcss.css" />
+    <title>Darina Ryabova</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,400&family=Roboto+Slab:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./siteToo.js"></script>
+  </head>
+  <header>
+    <a href="#" class="logo"><span>D</span>aryna<span>R</span></a>
+    <ul class="navbar">
+      <li><a href="webbsite.html" class="active">Home</a></li>
+    </ul>
+  </header>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <form action="#" id="form" class="form_body">
+          <h1 class="form_title">Contact me</h1>
+          <div class="form_item">
+            <label for="forName" class="form_label">Name*</label>
+            <input
+              id="forName"
+              type="text"
+              name="name"
+              class="form_input _req"
+            />
+          </div>
+          <div class="form_item">
+            <label for="forEmail" class="form_label">E-mail*</label>
+            <input
+              id="forEmail"
+              type="text"
+              name="email"
+              class="form_input _req _email"
+            />
+          </div>
+          <div class="form_item">
+            <div class="form_label">What is the purpose of the message?</div>
+            <div class="options">
+              <div class="options_item">
+                <input
+                  id="forRightHanded"
+                  checked
+                  type="radio"
+                  value="work"
+                  name="works"
+                  class="options_input"
+                />
+                <label for="forRightHanded" class="options_label"
+                  ><span>Work</span></label
+                >
+              </div>
+              <div class="options_item">
+                <input
+                  id="forLeftHanded"
+                  type="radio"
+                  value="Communication"
+                  name="works"
+                  class="options_input"
+                />
+                <label for="forLeftHanded" class="options_label"
+                  ><span>Communication</span></label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="form_item">
+            <label for="forMessage" class="form_label">Message:*</label>
+            <textarea
+              name="message"
+              id="forMessage"
+              class="form_input"
+            ></textarea>
+          </div>
+          <div class="form_item">
+            <div class="checkbox">
+              <input
+                id="forAgreement"
+                checked
+                type="checkbox"
+                name="agreement"
+                class="checkbox_input _req"
+              />
+              <label for="forAgreement" class="checkbox_label"
+                ><span>I am sure I want to send this message</span></label
+              >
+            </div>
+          </div>
+          <button type="submit" class="form_button">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
